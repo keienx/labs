@@ -1,0 +1,6 @@
+﻿  Source.cpp
+C:\Users\Admin\Desktop\hash\hash\Source.cpp(259,59): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+C:\Users\Admin\Desktop\hash\hash\Source.cpp(260,20): warning C4305: *=: усечение из "double" в "float"
+C:\Users\Admin\Desktop\hash\hash\Source.cpp(356,37): warning C4101: count: неиспользованная локальная переменная
+C:\Users\Admin\Desktop\hash\hash\Source.cpp(477,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  hash.vcxproj -> C:\Users\Admin\Desktop\hash\x64\Debug\hash.exe
