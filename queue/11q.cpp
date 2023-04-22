@@ -1,6 +1,7 @@
 #include <iostream>
 #include <fstream>
 #include <string>
+#include <windows.h>
 
 using namespace std;
 
@@ -33,14 +34,14 @@ void push(Queue& queue, string& value) {
 void full(Queue& queue, int size) {
     string value;
     for (int i = 1; i <= size; i++) {
-        cout << "‚¢¥¤¨â¥ §­ ç¥­¨¥ " << i << " í«¥¬¥­â : ";
+        cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ " << i << " ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð°: ";
         cin >> value;
         push(queue, value);
     }
 }
 
 void print(Queue& queue) {
-    cout << "Žç¥à¥¤ì: =  ";
+    cout << "ÐžÑ‡ÐµÑ€ÐµÐ´ÑŒ: =  ";
     Point* p = queue.head;
     while (p != nullptr) {
         cout << p->value << " ";
@@ -64,7 +65,7 @@ void insert(Queue& queue, int index) {
         i++;
     }
     string value;
-    cout << "‚¢¥¤¨â¥ §­ ç¥­¨¥ ¤«ï ¢áâ ¢ª¨ " << i << " í«¥¬¥­â®¬ ";
+    cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Ð´Ð»Ñ Ð²ÑÑ‚Ð°Ð²ÐºÐ¸ " << i << " ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð¼ ";
     cin >> value;
     push(queue, value);
     for (i; i < queue.size; i++) {
@@ -92,14 +93,15 @@ void fromq(Queue& queue, int size){
 }
 
 int main(){
-    setlocale(LC_ALL, "ru");
+    SetConsoleCP(1251);
+    SetConsoleOutputCP(1251);
     Queue queue;
     int size, i;
-    cout << "‚¢¥¤¨â¥ à §¬¥à ®ç¥à¥¤¨: ";
+    cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ€Ð°Ð·Ð¼ÐµÑ€ Ð¾Ñ‡ÐµÑ€ÐµÐ´Ð¸: ";
     cin >> size;
     full(queue, size);
     print(queue);
-    cout << "­®¬¥à\n";
+    cout << "Ð½Ð¾Ð¼ÐµÑ€\n";
     cin >> i;
     size++;
     insert(queue, i);
