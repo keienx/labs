@@ -59,18 +59,20 @@ void fromstack(Stack& stack, int size){
 
 int main() {
     setlocale(LC_ALL, "ru");
+    SetConsoleCP(1251);
+    SetConsoleOutputCP(1251);
     Stack stack;
     int size;
     string str;
-    cout << "Š®«¨ç¥áâ¢® í«¥¬¥­â®¢ áâ¥ª ? " << '\n';
+    cout << "Å Â®Â«Â¨Ã§Â¥Ã¡Ã¢Â¢Â® Ã­Â«Â¥Â¬Â¥Â­Ã¢Â®Â¢ Ã¡Ã¢Â¥ÂªÂ ? " << '\n';
     cin >> size;
     cin.ignore();
     for (int i = 0; i < size; i++) {
-        cout << "¢¢¥¤¨â¥ " << i + 1 << " í«¥¬¥­â: ";
+        cout << "Â¢Â¢Â¥Â¤Â¨Ã¢Â¥ " << i + 1 << " Ã­Â«Â¥Â¬Â¥Â­Ã¢: ";
         getline(cin, str);
         pushfront(stack, str);
     }
-    cout << "áâ¥ª" << '\n';
+    cout << "Ã¡Ã¢Â¥Âª" << '\n';
     printst(stack);
     getline(cin, str);
     pushfront(stack, str);
