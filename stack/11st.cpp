@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 #include <fstream>
-#include <Windows.h>
+#include <windows.h>
 
 using namespace std;
 
@@ -14,15 +14,15 @@ struct Stack {
     Point* head = nullptr;
 };
 
-void popfront(Stack& stack){
+void popfront(Stack& stack) {
     if (stack.head == nullptr) return;
     Point* temp = stack.head;
     stack.head = stack.head->next;
     delete temp;
 }
 
-void printst(Stack& stack){
-    for (Point* temp = stack.head; temp; temp = temp->next){
+void printst(Stack& stack) {
+    for (Point* temp = stack.head; temp; temp = temp->next) {
         cout << temp->value << "\n";
     }
     cout << '\n';
@@ -39,19 +39,19 @@ void pushfront(Stack& stack, string value) {
     }
 }
 
-void addstack(Stack& stack){
+void addstack(Stack& stack) {
     ofstream out("file.txt");
-    for (Point* temp = stack.head; temp; temp = temp->next){
+    for (Point* temp = stack.head; temp; temp = temp->next) {
         out << temp->value << "\n";
     }
     out << '\n';
     out.close();
 }
 
-void fromstack(Stack& stack, int size){
+void fromstack(Stack& stack, int size) {
     string buf;
     ifstream in("file3.txt");
-    for (int i = 0; i < size; i++){
+    for (int i = 0; i < size; i++) {
         getline(in, buf);
         pushfront(stack, buf);
     }
@@ -64,15 +64,15 @@ int main() {
     Stack stack;
     int size;
     string str;
-    cout << "Š®«¨ç¥áâ¢® í«¥¬¥­â®¢ áâ¥ª ? " << '\n';
+    cout << "Количество элементов стека? " << '\n';
     cin >> size;
     cin.ignore();
     for (int i = 0; i < size; i++) {
-        cout << "¢¢¥¤¨â¥ " << i + 1 << " í«¥¬¥­â: ";
+        cout << "введите " << i + 1 << " элемент: ";
         getline(cin, str);
         pushfront(stack, str);
     }
-    cout << "áâ¥ª" << '\n';
+    cout << "стек" << '\n';
     printst(stack);
     getline(cin, str);
     pushfront(stack, str);
