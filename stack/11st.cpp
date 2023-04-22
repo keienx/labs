@@ -59,7 +59,6 @@ void fromstack(Stack& stack, int size){
 }
 
 int main() {
-    setlocale(LC_ALL, "ru");
     SetConsoleCP(1251);
     SetConsoleOutputCP(1251);
     Stack stack;
