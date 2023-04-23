@@ -6,9 +6,9 @@
 
 using namespace std;
 
-string Names[10] = { "Àíäðåé", "Èâàí", "Ïåòð", "Äìèòðèé", "Åâãåíèé", "Àíòîí", "Îëåã", "Àðòåì", "Ãëåá", "Ìàêñèì" };
-string Patronymics[10] = { "Àíäðååâè÷", "Èâàíîâè÷", "Ïåòðîâè÷","Äìèòðèåâè÷", "Åâãåíüåâè÷", "Àíòîíîâè÷", "Îëåãîâè÷", "Àðòåìîâè÷", "Ãëåáîâè÷", "Ìàêñèìîâè÷" };
-string Surnames[10] = { "Ñìèðíîâ", "Ìàñëîâ", "Ñàôðîíîâ", "Êóçíåöîâ", "Ãîðáà÷¸â", "Âàðèêîâ", "Ôèëàòîâ", "Àêñåíîâ", "Áîæåíîâ", "Ëóæêîâ" };
+string Names[10] = { "ÐÐ½Ð´Ñ€ÐµÐ¹", "Ð˜Ð²Ð°Ð½", "ÐŸÐµÑ‚Ñ€", "Ð”Ð¼Ð¸Ñ‚Ñ€Ð¸Ð¹", "Ð•Ð²Ð³ÐµÐ½Ð¸Ð¹", "ÐÐ½Ñ‚Ð¾Ð½", "ÐžÐ»ÐµÐ³", "ÐÑ€Ñ‚ÐµÐ¼", "Ð“Ð»ÐµÐ±", "ÐœÐ°ÐºÑÐ¸Ð¼" };
+string Patronymics[10] = { "ÐÐ½Ð´Ñ€ÐµÐµÐ²Ð¸Ñ‡", "Ð˜Ð²Ð°Ð½Ð¾Ð²Ð¸Ñ‡", "ÐŸÐµÑ‚Ñ€Ð¾Ð²Ð¸Ñ‡","Ð”Ð¼Ð¸Ñ‚Ñ€Ð¸ÐµÐ²Ð¸Ñ‡", "Ð•Ð²Ð³ÐµÐ½ÑŒÐµÐ²Ð¸Ñ‡", "ÐÐ½Ñ‚Ð¾Ð½Ð¾Ð²Ð¸Ñ‡", "ÐžÐ»ÐµÐ³Ð¾Ð²Ð¸Ñ‡", "ÐÑ€Ñ‚ÐµÐ¼Ð¾Ð²Ð¸Ñ‡", "Ð“Ð»ÐµÐ±Ð¾Ð²Ð¸Ñ‡", "ÐœÐ°ÐºÑÐ¸Ð¼Ð¾Ð²Ð¸Ñ‡" };
+string Surnames[10] = { "Ð¡Ð¼Ð¸Ñ€Ð½Ð¾Ð²", "ÐœÐ°ÑÐ»Ð¾Ð²", "Ð¡Ð°Ñ„Ñ€Ð¾Ð½Ð¾Ð²", "ÐšÑƒÐ·Ð½ÐµÑ†Ð¾Ð²", "Ð“Ð¾Ñ€Ð±Ð°Ñ‡Ñ‘Ð²", "Ð’Ð°Ñ€Ð¸ÐºÐ¾Ð²", "Ð¤Ð¸Ð»Ð°Ñ‚Ð¾Ð²", "ÐÐºÑÐµÐ½Ð¾Ð²", "Ð‘Ð¾Ð¶ÐµÐ½Ð¾Ð²", "Ð›ÑƒÐ¶ÐºÐ¾Ð²" };
 string Passports[10] = { "4759_969117", "4481_920688", "4340_756756", "4340_756756", "4793_464759", "5717_729432", "5717_726552", "5718_707432", "5718_723419", "5717_734532" };
 string Dates[10] = { "15.11.1969", "27.01.1996", "23.10.1972", "13.04.1993", "20.07.1985", "01.04.1988", "13.07.1999", "19.09.1964", "26.11.1987", "30.12.1982" };
 
@@ -28,9 +28,9 @@ struct Human {
         this->number_of_passport = number_of_passport;
     }
     void OutputHuman() {
-        cout << "ÔÈÎ:\t" << this->last_name << ' ' << this->first_name << ' ' << this->patronymic << "\n";
-        cout << "Äàòà ðîæäåíèÿ:\t" << this->date_of_birth << "\n";
-        cout << "Ñåðèÿ è íîìåð ïàñïîðòà:\t" << this->number_of_passport << "\n";
+        cout << "Ð¤Ð˜Ðž:\t" << this->last_name << ' ' << this->first_name << ' ' << this->patronymic << "\n";
+        cout << "Ð”Ð°Ñ‚Ð° Ñ€Ð¾Ð¶Ð´ÐµÐ½Ð¸Ñ:\t" << this->date_of_birth << "\n";
+        cout << "Ð¡ÐµÑ€Ð¸Ñ Ð¸ Ð½Ð¾Ð¼ÐµÑ€ Ð¿Ð°ÑÐ¿Ð¾Ñ€Ñ‚Ð°:\t" << this->number_of_passport << "\n";
     }
     void CopyHuman(Human* copy) {
         this->first_name = copy->first_name;
@@ -116,11 +116,11 @@ List* CreateList(int size) {
 }
 
 void ShowList(List* list) {
-    if (ListIsEmpty(list)) cout << "Ñïèñîê ïóñò!\n";
+    if (ListIsEmpty(list)) cout << "Ð¡Ð¿Ð¸ÑÐ¾Ðº Ð¿ÑƒÑÑ‚!\n";
     else {
         int i = 1;
         Human* temp = list->head;
-        cout << "\tÑïèñîê\n";
+        cout << "\tÐ¡Ð¿Ð¸ÑÐ¾Ðº\n";
         while (i <= list->size) {
             temp->OutputHuman();
             temp = temp->next;
@@ -136,14 +136,14 @@ void RemoveElement(List* list, string k) {
         list->head = temp->next;
         delete temp;
         list->size--;
-        cout << "Ýëåìåíò óäàë¸í!\n";
+        cout << "Ð­Ð»ÐµÐ¼ÐµÐ½Ñ‚ ÑƒÐ´Ð°Ð»Ñ‘Ð½!\n";
         return;
     }
     while (temp->next->date_of_birth != k) {
         temp = temp->next;
     }
     if (temp != nullptr) {
-        cout << "Ýëåìåíò óäàë¸í!\n";
+        cout << "Ð­Ð»ÐµÐ¼ÐµÐ½Ñ‚ ÑƒÐ´Ð°Ð»Ñ‘Ð½!\n";
         Human* r = temp->next;
         temp->next = r->next;
         delete r;
@@ -152,7 +152,7 @@ void RemoveElement(List* list, string k) {
         return;
     }
     else {
-        cout << "Ýëåìåíò íå íàéäåí!\n";
+        cout << "Ð­Ð»ÐµÐ¼ÐµÐ½Ñ‚ Ð½Ðµ Ð½Ð°Ð¹Ð´ÐµÐ½!\n";
     }
 }
 
@@ -178,10 +178,10 @@ void PrintInFile(string filename, List* list) {
     ofstream fout;
     fout.open(filename);
     if (!fout.is_open()) {
-        cout << "Ôàéë íå îòêðûò!\n";
+        cout << "Ð¤Ð°Ð¹Ð» Ð½Ðµ Ð¾Ñ‚ÐºÑ€Ñ‹Ñ‚!\n";
     }
     else {
-        cout << "Èíôîðìàöèÿ çàïèñàíà â ôàéë!" << "\n";
+        cout << "Ð˜Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ñ Ð·Ð°Ð¿Ð¸ÑÐ°Ð½Ð° Ð² Ñ„Ð°Ð¹Ð»!" << "\n";
         Human* p = list->head;
         for (int i = 0; i < list->size; i++) {
             fout << p->last_name << "\n";
@@ -199,10 +199,10 @@ void PrintFromFile(string filename, List* list) {
     ifstream fin;
     fin.open(filename);
     if (!fin.is_open()) {
-        cout << "Ôàéë íå îòêðûò!\n";
+        cout << "Ð¤Ð°Ð¹Ð» Ð½Ðµ Ð¾Ñ‚ÐºÑ€Ñ‹Ñ‚!\n";
     }
     else {
-        cout << "Èíôîðìàöèÿ ñêîïèðîâàíà èç ôàéëà!" << "\n";
+        cout << "Ð˜Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ñ ÑÐºÐ¾Ð¿Ð¸Ñ€Ð¾Ð²Ð°Ð½Ð° Ð¸Ð· Ñ„Ð°Ð¹Ð»Ð°!" << "\n";
         string word1, word2, word3, word4, word5;
         Human* p, * r;
         p = new (Human);
@@ -286,7 +286,7 @@ Human** open_address_method(List* l) {
             pep = pep->next;
         }
     }
-    cout << "Êîëè÷åñòâî êîëëèçèé = " << collisions_count << "\n";
+    cout << "ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ ÐºÐ¾Ð»Ð»Ð¸Ð·Ð¸Ð¹ = " << collisions_count << "\n";
     return table;
 }
 
@@ -314,7 +314,7 @@ Human** chain_method(List* l) {
             pep->CopyHuman(curr);
         }
     }
-    cout << "Êîëè÷åñòâî êîëëèçèé = " << collisions_count << "\n";
+    cout << "ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ ÐºÐ¾Ð»Ð»Ð¸Ð·Ð¸Ð¹ = " << collisions_count << "\n";
     return table;
 }
 
@@ -336,20 +336,20 @@ void print_hash(Human** table, int size, int type) {
 }
 
 void ShowMenu() {
-    cout << "\t\tÌåíþ\n";
-    cout << "0 -  Çàâåðøåíèå ðàáîòû ïðîãðàììû\n";
-    cout << "1 - Ñîçäàíèå ñïèñêà\n";
-    cout << "2 - Âûâîä ñïèñêà\n";
-    cout << "3 - Äîáàâèòü ýëåìåíò â íà÷àëî ñïèñêà\n";
-    cout << "4 - Äîáàâèòü ýëåìåíò â êîíåö ñïèñêà\n";
-    cout << "5 - Óäàëèòü ýëåìåíò ñ çàäàíûì êëþ÷îì\n";
-    cout << "6 - Óäàëèòü ýëåìåíò ñ çàäàíûì íîìåðîì\n";
-    cout << "7 - Äîáàâèòü ýëåìåíò ñ çàäàíûì íîìåðîì\n";
-    cout << "8 - Óäàëèòü ñïèñîê\n";
-    cout << "9 - Çàïèñàòü äàííûå â ôàéë\n";
-    cout << "10 - Çàïèñàòü äàííûå èç ôàéëà â ñïèñîê\n";
-    cout << "11 - Ìåòîä îòêðûòîé àäðåñàöèè\n";
-    cout << "12 - Ìåòîä öåïî÷åê\n";
+    cout << "\t\tÐœÐµÐ½ÑŽ\n";
+    cout << "0 -  Ð—Ð°Ð²ÐµÑ€ÑˆÐµÐ½Ð¸Ðµ Ñ€Ð°Ð±Ð¾Ñ‚Ñ‹ Ð¿Ñ€Ð¾Ð³Ñ€Ð°Ð¼Ð¼Ñ‹\n";
+    cout << "1 - Ð¡Ð¾Ð·Ð´Ð°Ð½Ð¸Ðµ ÑÐ¿Ð¸ÑÐºÐ°\n";
+    cout << "2 - Ð’Ñ‹Ð²Ð¾Ð´ ÑÐ¿Ð¸ÑÐºÐ°\n";
+    cout << "3 - Ð”Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚ Ð² Ð½Ð°Ñ‡Ð°Ð»Ð¾ ÑÐ¿Ð¸ÑÐºÐ°\n";
+    cout << "4 - Ð”Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚ Ð² ÐºÐ¾Ð½ÐµÑ† ÑÐ¿Ð¸ÑÐºÐ°\n";
+    cout << "5 - Ð£Ð´Ð°Ð»Ð¸Ñ‚ÑŒ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚ Ñ Ð·Ð°Ð´Ð°Ð½Ñ‹Ð¼ ÐºÐ»ÑŽÑ‡Ð¾Ð¼\n";
+    cout << "6 - Ð£Ð´Ð°Ð»Ð¸Ñ‚ÑŒ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚ Ñ Ð·Ð°Ð´Ð°Ð½Ñ‹Ð¼ Ð½Ð¾Ð¼ÐµÑ€Ð¾Ð¼\n";
+    cout << "7 - Ð”Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚ Ñ Ð·Ð°Ð´Ð°Ð½Ñ‹Ð¼ Ð½Ð¾Ð¼ÐµÑ€Ð¾Ð¼\n";
+    cout << "8 - Ð£Ð´Ð°Ð»Ð¸Ñ‚ÑŒ ÑÐ¿Ð¸ÑÐ¾Ðº\n";
+    cout << "9 - Ð—Ð°Ð¿Ð¸ÑÐ°Ñ‚ÑŒ Ð´Ð°Ð½Ð½Ñ‹Ðµ Ð² Ñ„Ð°Ð¹Ð»\n";
+    cout << "10 - Ð—Ð°Ð¿Ð¸ÑÐ°Ñ‚ÑŒ Ð´Ð°Ð½Ð½Ñ‹Ðµ Ð¸Ð· Ñ„Ð°Ð¹Ð»Ð° Ð² ÑÐ¿Ð¸ÑÐ¾Ðº\n";
+    cout << "11 - ÐœÐµÑ‚Ð¾Ð´ Ð¾Ñ‚ÐºÑ€Ñ‹Ñ‚Ð¾Ð¹ Ð°Ð´Ñ€ÐµÑÐ°Ñ†Ð¸Ð¸\n";
+    cout << "12 - ÐœÐµÑ‚Ð¾Ð´ Ñ†ÐµÐ¿Ð¾Ñ‡ÐµÐº\n";
 }
 
 void menu() {
@@ -369,7 +369,7 @@ void menu() {
         case 0:
             break;
         case 1:
-            cout << "Ââåäèòå ðàçìåð ñïèñêà: ";
+            cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ€Ð°Ð·Ð¼ÐµÑ€ ÑÐ¿Ð¸ÑÐºÐ°: ";
             cin >> size_list;
             list = CreateList(size_list);
             break;
@@ -383,17 +383,17 @@ void menu() {
             PushBack(list);
             break;
         case 5:
-            cout << "Ââåäèòå êëþ÷: ";
+            cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ»ÑŽÑ‡: ";
             getline(cin, key); getline(cin, key);
             RemoveElement(list, key);
             break;
         case 6:
-            cout << "Ââåäèòå íîìåð çàäàííîãî ýëåìåíòà: ";
+            cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð¾Ð¼ÐµÑ€ Ð·Ð°Ð´Ð°Ð½Ð½Ð¾Ð³Ð¾ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð°: ";
             cin >> number;
             RemoveElement(list, number);
             break;
         case 7:
-            cout << "Ââåäèòå íîìåð çàäàííîãî ýëåìåíòà: ";
+            cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð¾Ð¼ÐµÑ€ Ð·Ð°Ð´Ð°Ð½Ð½Ð¾Ð³Ð¾ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð°: ";
             cin >> number;
             AddElement(list, number);
             break;
@@ -401,13 +401,13 @@ void menu() {
             while (!ListIsEmpty(list)) {
                 RemoveElement(list, 1);
             }
-            cout << "Ñïèñîê óäàë¸í!\n";
+            cout << "Ð¡Ð¿Ð¸ÑÐ¾Ðº ÑƒÐ´Ð°Ð»Ñ‘Ð½!\n";
             break;
         case 9:
             if (!ListIsEmpty(list))
                 PrintInFile(file, list);
             else
-                cout << "Ñïèñîê íå ñîçäàí!\n";
+                cout << "Ð¡Ð¿Ð¸ÑÐ¾Ðº Ð½Ðµ ÑÐ¾Ð·Ð´Ð°Ð½!\n";
             break;
         case 10:
             PrintFromFile(file, list);
@@ -416,10 +416,10 @@ void menu() {
             ct = 0;
             table = open_address_method(list);
             print_hash(table, list->size, 1);
-            cout << "Ââåäèòå äàòó ðîæäåíèÿ: ";
+            cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð´Ð°Ñ‚Ñƒ Ñ€Ð¾Ð¶Ð´ÐµÐ½Ð¸Ñ: ";
             getline(cin, date); getline(cin, date);
             while (date.length() != 10) {
-                cout << "Ââåäèòå äàòó ðîæäåíèÿ: ";
+                cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð´Ð°Ñ‚Ñƒ Ñ€Ð¾Ð¶Ð´ÐµÐ½Ð¸Ñ: ";
                 getline(cin, date);
             }
             pos = hash_func(date, list->size);
@@ -446,10 +446,10 @@ void menu() {
             flag = false;
             table = chain_method(list);
             print_hash(table, list->size, 2);
-            cout << "Ââåäèòå äàòó ðîæäåíèÿ: ";
+            cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð´Ð°Ñ‚Ñƒ Ñ€Ð¾Ð¶Ð´ÐµÐ½Ð¸Ñ: ";
             getline(cin, date); getline(cin, date);
             while (date.length() != 10) {
-                cout << "Ââåäèòå äàòó ðîæäåíèÿ: ";
+                cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð´Ð°Ñ‚Ñƒ Ñ€Ð¾Ð¶Ð´ÐµÐ½Ð¸Ñ: ";
                 getline(cin, date);
             }
             pos = hash_func(date, list->size);
