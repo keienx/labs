@@ -1,66 +1,73 @@
 #include "Header.h"
 #include <iostream>
 #include <string>
+
 using namespace std;
-//конструктор без параметров
-salary::salary()
-{
+
+//РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ Р±РµР· РїР°СЂР°РјРµС‚СЂРѕРІ
+
+salary::salary(){
 	name = "NULL";
 	money = 0;
 	premium = 0;
-	cout << "Конструктор без параметров для объекта " << this << endl;
+	cout << "РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ Р±РµР· РїР°СЂР°РјРµС‚СЂРѕРІ РґР»СЏ РѕР±СЉРµРєС‚Р° " << this << '\n';
 }
-//конструктор с параметрами
-salary::salary(string N, int M, int P)
-{
+
+//РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ СЃ РїР°СЂР°РјРµС‚СЂР°РјРё
+
+salary::salary(string N, int M, int P){
 	name = N;
 	money = M;
 	premium = M / 100 * P;
-	cout << "Конструктор с параметрами для объекта " << this << endl;
+	cout << "РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ СЃ РїР°СЂР°РјРµС‚СЂР°РјРё РґР»СЏ РѕР±СЉРµРєС‚Р° " << this << '\n';
 }
-//конструктор копирования
-salary::salary(const salary& t)
-{
+//РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РєРѕРїРёСЂРѕРІР°РЅРёСЏ
+
+salary::salary(const salary& t){
 	name = t.name;
 	money = t.money;
 	premium = t.premium;
-	cout << "Конструктор копирования для объекта " << this << endl;
+	cout << "РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РєРѕРїРёСЂРѕРІР°РЅРёСЏ РґР»СЏ РѕР±СЉРµРєС‚Р° " << this << '\n';
 }
-//деструктор
-salary::~salary()
-{
-	cout << "Деструктор для объекта " << this << endl;
+
+//РґРµСЃС‚СЂСѓРєС‚РѕСЂ
+
+salary::~salary(){
+	cout << "Р”РµСЃС‚СЂСѓРєС‚РѕСЂ РґР»СЏ РѕР±СЉРµРєС‚Р° " << this << '\n';
 }
-//селекторы
-string salary::get_name()
-{
+
+//СЃРµР»РµРєС‚РѕСЂС‹
+
+string salary::get_name(){
 	return name;
 }
-int salary::get_money()
-{
+
+int salary::get_money(){
 	return money;
 }
-int salary::get_premium()
-{
+
+int salary::get_premium(){
 	return premium;
 }
-//модификаторы
-void salary::set_name(string N)
-{
+
+//РјРѕРґРёС„РёРєР°С‚РѕСЂС‹
+
+void salary::set_name(string N){
 	name = N;
 }
-void salary::set_money(int M)
-{
+
+void salary::set_money(int M){
 	money = M;
 }
-void salary::set_premium(int M, int P)
-{
+
+void salary::set_premium(int M, int P){
 	premium = M / 100 * P;
 }
-//метод для просмотра атрибутов
-void salary::show()
-{
-	cout << "name :" << name << endl;
-	cout << "money :" << money << endl;
-	cout << "premium :" << premium << endl;
+
+//РјРµС‚РѕРґ РґР»СЏ РїСЂРѕСЃРјРѕС‚СЂР° Р°С‚СЂРёР±СѓС‚РѕРІ
+
+void salary::show(){
+	cout << "name :" << name << '\n';
+	cout << "money :" << money << '\n';
+	cout << "premium :" << premium << '\n';
 }
