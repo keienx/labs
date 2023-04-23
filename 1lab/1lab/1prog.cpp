@@ -10,7 +10,7 @@ void progression::init(double First, int Second) {
 
 void progression::read() {
     bool f = false;
-    cout << "Ââåäèòå çíà÷åíèå ïåðåìåííîé first\n";
+    cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Ð¿ÐµÑ€ÐµÐ¼ÐµÐ½Ð½Ð¾Ð¹ first\n";
     while (f == false) {
         cin >> first;
         if (!(cin.good())) {
@@ -21,7 +21,7 @@ void progression::read() {
             f = true;
         }
     }
-    cout << "Ââåäèòå çíà÷åíèå ïåðåìåííîé second\n";
+    cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Ð¿ÐµÑ€ÐµÐ¼ÐµÐ½Ð½Ð¾Ð¹ second\n";
     while (!(cin >> second)) {
         cin.clear();
         cin.ignore();
