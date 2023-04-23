@@ -11,24 +11,24 @@ Pair& Pair::operator=(const Pair& d) {
     second = d.second;
 }
 Pair Pair::operator-(const Pair& d) {
-    cout << "Âû÷èòàíèå " << *this << " è " << d << '\n';
+    cout << "Ð’Ñ‹Ñ‡Ð¸Ñ‚Ð°Ð½Ð¸Ðµ " << *this << " Ð¸ " << d << '\n';
     this->first = this->first - d.first;
     this->second = this->second - d.second;
-    cout << "Ïîëó÷èëîñü ";
+    cout << "ÐŸÐ¾Ð»ÑƒÑ‡Ð¸Ð»Ð¾ÑÑŒ ";
     return *this;
 }
 
 Pair Pair::operator+(const int& d) {
-    cout << "Ñëîæåíèå " << *this << " è " << d << '\n';
+    cout << "Ð¡Ð»Ð¾Ð¶ÐµÐ½Ð¸Ðµ " << *this << " Ð¸ " << d << '\n';
     this->first = this->first + d;
-    cout << "Ïîëó÷èëîñü ";
+    cout << "ÐŸÐ¾Ð»ÑƒÑ‡Ð¸Ð»Ð¾ÑÑŒ ";
     return *this;
 }
 
 Pair Pair::operator+(const double& d) {
-    cout << "Ñëîæåíèå " << *this << " è " << d << '\n';
+    cout << "Ð¡Ð»Ð¾Ð¶ÐµÐ½Ð¸Ðµ " << *this << " Ð¸ " << d << '\n';
     this->second = this->second - d;
-    cout << "Ïîëó÷èëîñü ";
+    cout << "ÐŸÐ¾Ð»ÑƒÑ‡Ð¸Ð»Ð¾ÑÑŒ ";
     return *this;
 }
 
