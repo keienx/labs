@@ -18,15 +18,15 @@ Print::Print(const Print& P) {
 }
 
 void Print::Show() {
-	cout << "\nÈìÿ: " << name;
-	cout << "\nÀâòîð: " << author << "\n";
+	cout << "\nÐ˜Ð¼Ñ: " << name;
+	cout << "\nÐÐ²Ñ‚Ð¾Ñ€: " << author << "\n";
 }
 
 void Print::Input() {
 	getline(cin, name);
-	cout << "Èìÿ? "; 
+	cout << "Ð˜Ð¼Ñ? "; 
 	getline(cin, name);
-	cout << "Àâòîð? "; 
+	cout << "ÐÐ²Ñ‚Ð¾Ñ€? "; 
 	getline(cin, author);
 }
 
