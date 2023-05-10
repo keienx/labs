@@ -28,7 +28,7 @@ void Vector::Add(Object* p){
 
 ostream& operator<<(ostream& out, const Vector& v) {
 	if (v.size == 0) {
-		out << "Ïóñò" << "\n";
+		out << "ÐŸÑƒÑÑ‚" << "\n";
 	}
 	Object** p = v.beg;
 	for (int i = 0; i < v.cur; i++) {
