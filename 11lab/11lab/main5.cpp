@@ -1,4 +1,4 @@
-//#include <C:\Users\Admin\Desktop\vsc\äà óæ\11lab\11lab\pair.h>
+//#include <C:\Users\Admin\Desktop\vsc\Ð´Ð° ÑƒÐ¶\11lab\11lab\pair.h>
 //#include "List5.h"
 //#include <iostream>
 //#include <queue>
@@ -9,23 +9,23 @@
 //	system("color F0");
 //	system("chcp 1251 >> null");
 //	int size;
-//	cout << "Ðàçìåð? ";
+//	cout << "Ð Ð°Ð·Ð¼ÐµÑ€? ";
 //	cin >> size;
 //	List<Pair> l(size);
 //	l.Print();
 //	Pair range_min, range_max, min_el, max_el;
 //	Pair el = l.srednee();
 //	l.add_list(el);
-//	cout << "Äîáàâëåíèå ñðåäíåãî àðèôìåòè÷åñêîãî\n";
+//	cout << "Ð”Ð¾Ð±Ð°Ð²Ð»ÐµÐ½Ð¸Ðµ ÑÑ€ÐµÐ´Ð½ÐµÐ³Ð¾ Ð°Ñ€Ð¸Ñ„Ð¼ÐµÑ‚Ð¸Ñ‡ÐµÑÐºÐ¾Ð³Ð¾\n";
 //	l.Print();
-//	cout << "Óñòàíîâèòå ïðîìåæóòîê óäàëÿåìûõ ýëåìåíòîâ:\nÎò:\n"; cin >> range_min;
-//	cout << "Äî:\n"; cin >> range_max;
-//	cout << "Óäàëåíèå ýëåìåíòîâ:\n";
+//	cout << "Ð£ÑÑ‚Ð°Ð½Ð¾Ð²Ð¸Ñ‚Ðµ Ð¿Ñ€Ð¾Ð¼ÐµÐ¶ÑƒÑ‚Ð¾Ðº ÑƒÐ´Ð°Ð»ÑÐµÐ¼Ñ‹Ñ… ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð²:\nÐžÑ‚:\n"; cin >> range_min;
+//	cout << "Ð”Ð¾:\n"; cin >> range_max;
+//	cout << "Ð£Ð´Ð°Ð»ÐµÐ½Ð¸Ðµ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð²:\n";
 //	l.remove_elements(range_min, range_max);
 //	l.Print();
 //	min_el = l.min();
 //	max_el = l.max();
-//	cout << "Äîáàâëåíèå ê ýëåìåíòàì ìàêñèìàëüíîãî è ìèíèìàëüíîãî çíà÷åíèÿ:\n";
+//	cout << "Ð”Ð¾Ð±Ð°Ð²Ð»ÐµÐ½Ð¸Ðµ Ðº ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð°Ð¼ Ð¼Ð°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ð³Ð¾ Ð¸ Ð¼Ð¸Ð½Ð¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ð³Ð¾ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ñ:\n";
 //	l.increase_elements(min_el, max_el);
 //	l.Print();
 //	return 0;
