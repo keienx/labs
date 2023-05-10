@@ -1,118 +1,118 @@
-#include <C:\Users\Admin\Desktop\vsc\äà óæ\11lab\11lab\pair.h>
-#include <iostream>
-#include <queue>
-#include <list>
-using namespace std;
-
-typedef priority_queue<Pair> PQ;
-typedef list<Pair> List;
-
-PQ make_pq(int n) {
-	PQ s;
-	Pair t;
-	for (int i = 0; i < n; i++) {
-		cin >> t;
-		s.push(t);
-	}
-	return s;
-}
-
-List copy_pq_to_list(PQ pq) {
-	List l;
-	while (!pq.empty()) {
-		l.push_back(pq.top());
-		pq.pop();
-	}
-	return l;
-}
-
-PQ copy_list_to_pq(List l) {
-	PQ pq;
-	for (auto it = l.cbegin(); it != l.cend(); ++it)
-		pq.push(*it);
-	return pq;
-}
-
-void print_pq(PQ pq) {
-	List l = copy_pq_to_list(pq);
-	for (auto it = l.cbegin(); it != l.cend(); ++it)
-		cout << *it;
-	cout << "\n";
-}
-
-Pair srednee(PQ pq) {
-	Pair s;
-	List l = copy_pq_to_list(pq);
-	for (auto it = l.begin(); it != l.end(); ++it) s += *it;
-	int n = l.size();
-	s = s / n;
-	return s;
-}
-
-void add_pq(PQ& pq, Pair el) {
-	pq.push(el);
-}
-
-void remove_elements(PQ& pq, Pair rmin, Pair rmax) {
-	if (rmax < rmin) swap(rmin, rmax);
-	List l = copy_pq_to_list(pq);
-	for (auto it = l.begin(); it != l.end();) {
-		if (*it <= rmax && *it >= rmin)
-			it = l.erase(it);
-		else
-			++it;
-	}
-	pq = copy_list_to_pq(l);
-}
-
-Pair max(PQ pq) {
-	Pair max(INT_MIN, INT_MIN);
-	List l = copy_pq_to_list(pq);
-	for (auto it = l.begin(); it != l.end(); ++it)
-		if (*it > max)
-			max = *it;
-	return max;
-}
-
-Pair min(PQ pq) {
-	Pair min(INT_MAX, INT_MAX);
-	List l = copy_pq_to_list(pq);
-	for (auto it = l.begin(); it != l.end(); ++it)
-		if (*it < min)
-			min = *it;
-	return min;
-}
-
-void increase_elements(PQ& pq, Pair min, Pair max) {
-	List l = copy_pq_to_list(pq);
-	for (auto it = l.begin(); it != l.end(); ++it)
-		*it = *it + min + max;
-	pq = copy_list_to_pq(l);
-}
-
-int main() {
-	system("color F0");
-	system("chcp 1251 >> null");
-	Pair range_min, range_max, min_el, max_el;
-	PQ pq;
-	int size;
-	cout << "Ðàçìåð? "; 
-	cin >> size;
-	pq = make_pq(size);
-	print_pq(pq);
-	Pair el = srednee(pq);
-	add_pq(pq, el);
-	cout << "Äîáàâëåíèå ñðåäíåãî àðèôìåòè÷åñêîãî\n";
-	print_pq(pq);
-	cout << "Óñòàíîâèòå ïðîìåæóòîê óäàëÿåìûõ ýëåìåíòîâ:\nÎò:\n"; cin >> range_min;
-	cout << "Äî:\n"; cin >> range_max;
-	cout << "Óäàëåíèå ýëåìåíòîâ:\n";
-	remove_elements(pq, range_min, range_max);
-	print_pq(pq);
-	min_el = min(pq);
-	max_el = max(pq);
-	cout << "Äîáàâëåíèå ê ýëåìåíòàì ìàêñèìàëüíîãî è ìèíèìàëüíîãî çíà÷åíèÿ:\n";
-	increase_elements(pq, min_el, max_el);
-	print_pq(pq);
-	return 0;
-}
+#include <C:\Users\Admin\Desktop\vsc\Ð´Ð° ÑƒÐ¶\11lab\11lab\pair.h>
+//#include <iostream>
+//#include <queue>
+//#include <list>
+//using namespace std;
+//
+//typedef priority_queue<Pair> PQ;
+//typedef list<Pair> List;
+//
+//PQ make_pq(int n) {
+//	PQ s;
+//	Pair t;
+//	for (int i = 0; i < n; i++) {
+//		cin >> t;
+//		s.push(t);
+//	}
+//	return s;
+//}
+//
+//List copy_pq_to_list(PQ pq) {
+//	List l;
+//	while (!pq.empty()) {
+//		l.push_back(pq.top());
+//		pq.pop();
+//	}
+//	return l;
+//}
+//
+//PQ copy_list_to_pq(List l) {
+//	PQ pq;
+//	for (auto it = l.cbegin(); it != l.cend(); ++it)
+//		pq.push(*it);
+//	return pq;
+//}
+//
+//void print_pq(PQ pq) {
+//	List l = copy_pq_to_list(pq);
+//	for (auto it = l.cbegin(); it != l.cend(); ++it)
+//		cout << *it;
+//	cout << "\n";
+//}
+//
+//Pair srednee(PQ pq) {
+//	Pair s;
+//	List l = copy_pq_to_list(pq);
+//	for (auto it = l.begin(); it != l.end(); ++it) s += *it;
+//	int n = l.size();
+//	s = s / n;
+//	return s;
+//}
+//
+//void add_pq(PQ& pq, Pair el) {
+//	pq.push(el);
+//}
+//
+//void remove_elements(PQ& pq, Pair rmin, Pair rmax) {
+//	if (rmax < rmin) swap(rmin, rmax);
+//	List l = copy_pq_to_list(pq);
+//	for (auto it = l.begin(); it != l.end();) {
+//		if (*it <= rmax && *it >= rmin)
+//			it = l.erase(it);
+//		else
+//			++it;
+//	}
+//	pq = copy_list_to_pq(l);
+//}
+//
+//Pair max(PQ pq) {
+//	Pair max(INT_MIN, INT_MIN);
+//	List l = copy_pq_to_list(pq);
+//	for (auto it = l.begin(); it != l.end(); ++it)
+//		if (*it > max)
+//			max = *it;
+//	return max;
+//}
+//
+//Pair min(PQ pq) {
+//	Pair min(INT_MAX, INT_MAX);
+//	List l = copy_pq_to_list(pq);
+//	for (auto it = l.begin(); it != l.end(); ++it)
+//		if (*it < min)
+//			min = *it;
+//	return min;
+//}
+//
+//void increase_elements(PQ& pq, Pair min, Pair max) {
+//	List l = copy_pq_to_list(pq);
+//	for (auto it = l.begin(); it != l.end(); ++it)
+//		*it = *it + min + max;
+//	pq = copy_list_to_pq(l);
+//}
+//
+//int main() {
+//	system("color F0");
+//	system("chcp 1251 >> null");
+//	Pair range_min, range_max, min_el, max_el;
+//	PQ pq;
+//	int size;
+//	cout << "Ð Ð°Ð·Ð¼ÐµÑ€? "; 
+//	cin >> size;
+//	pq = make_pq(size);
+//	print_pq(pq);
+//	Pair el = srednee(pq);
+//	add_pq(pq, el);
+//	cout << "Ð”Ð¾Ð±Ð°Ð²Ð»ÐµÐ½Ð¸Ðµ ÑÑ€ÐµÐ´Ð½ÐµÐ³Ð¾ Ð°Ñ€Ð¸Ñ„Ð¼ÐµÑ‚Ð¸Ñ‡ÐµÑÐºÐ¾Ð³Ð¾\n";
+//	print_pq(pq);
+//	cout << "Ð£ÑÑ‚Ð°Ð½Ð¾Ð²Ð¸Ñ‚Ðµ Ð¿Ñ€Ð¾Ð¼ÐµÐ¶ÑƒÑ‚Ð¾Ðº ÑƒÐ´Ð°Ð»ÑÐµÐ¼Ñ‹Ñ… ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð²:\nÐžÑ‚:\n"; cin >> range_min;
+//	cout << "Ð”Ð¾:\n"; cin >> range_max;
+//	cout << "Ð£Ð´Ð°Ð»ÐµÐ½Ð¸Ðµ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð²:\n";
+//	remove_elements(pq, range_min, range_max);
+//	print_pq(pq);
+//	min_el = min(pq);
+//	max_el = max(pq);
+//	cout << "Ð”Ð¾Ð±Ð°Ð²Ð»ÐµÐ½Ð¸Ðµ Ðº ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð°Ð¼ Ð¼Ð°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ð³Ð¾ Ð¸ Ð¼Ð¸Ð½Ð¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ð³Ð¾ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ñ:\n";
+//	increase_elements(pq, min_el, max_el);
+//	print_pq(pq);
+//	return 0;
+//}
