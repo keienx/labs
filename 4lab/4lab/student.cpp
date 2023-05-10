@@ -28,22 +28,22 @@ Student& Student::operator =(const Student& S) {
 }
 
 ostream& operator<<(ostream& out, const Student& S) {
-	out << "Èìÿ: " << S.name;
-	out << "\nÂîçğàñò: " << S.age;
-	out << "\nÏğåäìåò: " << S.subject;
-	out << "\nÎöåíêà: " << S.mark;
+	out << "Ğ˜Ğ¼Ñ: " << S.name;
+	out << "\nĞ’Ğ¾Ğ·Ñ€Ğ°ÑÑ‚: " << S.age;
+	out << "\nĞŸÑ€ĞµĞ´Ğ¼ĞµÑ‚: " << S.subject;
+	out << "\nĞÑ†ĞµĞ½ĞºĞ°: " << S.mark;
 	out << "\n\n";
 	return out;
 }
 
 istream& operator>>(istream& in, Student& S) {
-	cout << "Èìÿ?: "; 
+	cout << "Ğ˜Ğ¼Ñ?: "; 
 	in >> S.name;
-	cout << "Âîçğàñò?: "; 
+	cout << "Ğ’Ğ¾Ğ·Ñ€Ğ°ÑÑ‚?: "; 
 	in >> S.age;
-	cout << "Ïğåäìåò?: "; 
+	cout << "ĞŸÑ€ĞµĞ´Ğ¼ĞµÑ‚?: "; 
 	in >> S.subject;
-	cout << "Îöåíêà?: "; 
+	cout << "ĞÑ†ĞµĞ½ĞºĞ°?: "; 
 	in >> S.mark;
 	cout << "\n";
 	return in;
@@ -51,11 +51,11 @@ istream& operator>>(istream& in, Student& S) {
 
 void Student::markCheck() {
 	if (mark <= 2) {
-		cout << "Îöåíêà íåóäîâëåòâîğèòåëüíà\n";
+		cout << "ĞÑ†ĞµĞ½ĞºĞ° Ğ½ĞµÑƒĞ´Ğ¾Ğ²Ğ»ĞµÑ‚Ğ²Ğ¾Ñ€Ğ¸Ñ‚ĞµĞ»ÑŒĞ½Ğ°\n";
 	}
 	else {
 		if (mark > 2) {
-			cout << "Îöåíêà óäîâëåòâîğèòåëüíà\n";
+			cout << "ĞÑ†ĞµĞ½ĞºĞ° ÑƒĞ´Ğ¾Ğ²Ğ»ĞµÑ‚Ğ²Ğ¾Ñ€Ğ¸Ñ‚ĞµĞ»ÑŒĞ½Ğ°\n";
 		}
 	}
 }
