@@ -68,9 +68,9 @@ ostream& operator<<(ostream& out, const Pair& obj){
 	return out;
 }
 istream& operator>>(istream& in, Pair& obj){
-	cout << "Первое (int): ";
+	cout << "first (int): ";
 	in >> obj.first;
-	cout << "Второе (double): ";
+	cout << "second (double): ";
 	in >> obj.second;
 	return in;
 }
