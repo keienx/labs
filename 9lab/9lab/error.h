@@ -12,7 +12,7 @@ protected:
 	string msg;
 public:
 	IndexError(){
-		msg = "Ошибка в индексе\n";
+		msg = "РћС€РёР±РєР° РІ РёРЅРґРµРєСЃРµ\n";
 	}
 	virtual void what(){
 		cout << msg;
@@ -24,7 +24,7 @@ protected:
 	string msg;
 public:
 	SizeError(){
-		msg = "Ошибка в размере\n";
+		msg = "РћС€РёР±РєР° РІ СЂР°Р·РјРµСЂРµ\n";
 	}
 	virtual void what(){
 		cout << msg;
@@ -36,7 +36,7 @@ protected:
 	string msg;
 public:
 	NumberError(){
-		msg = "Ошибка в номере\n";
+		msg = "РћС€РёР±РєР° РІ РЅРѕРјРµСЂРµ\n";
 	}
 	virtual void what(){
 		cout << msg;
