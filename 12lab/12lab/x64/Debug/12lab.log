@@ -1,0 +1,17 @@
+﻿  main3.cpp
+C:\Users\Admin\Desktop\vsc\да уж\12lab\12lab\List.h(38,1): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\Admin\Desktop\vsc\да уж\12lab\12lab\List.h(32,22): message : во время компиляции функции-члена класс шаблон "List<Pair>::List(int)"
+C:\Users\Admin\Desktop\vsc\да уж\12lab\12lab\main3.cpp(14,13): message : выполняется компиляция ссылки на экземпляр шаблон функции "List<Pair>::List(int)"
+C:\Users\Admin\Desktop\vsc\да уж\12lab\12lab\main3.cpp(14,19): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "List<Pair>"
+C:\Users\Admin\Desktop\vsc\да уж\12lab\12lab\List.h(52,1): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\Admin\Desktop\vsc\да уж\12lab\12lab\List.h(49,22): message : во время компиляции функции-члена класс шаблон "T List<T>::srednee(void)"
+          with
+          [
+              T=Pair
+          ]
+C:\Users\Admin\Desktop\vsc\да уж\12lab\12lab\main3.cpp(17,10): message : выполняется компиляция ссылки на экземпляр шаблон функции "T List<T>::srednee(void)"
+          with
+          [
+              T=Pair
+          ]
+  12lab.vcxproj -> C:\Users\Admin\Desktop\vsc\да уж\12lab\x64\Debug\12lab.exe
