@@ -18,18 +18,18 @@ Magazin::Magazin(const Magazin& P) {
 
 
 void Magazin::Show() {
-	cout << "\nÈìÿ: " << name;
-	cout << "\nÀâòîğ: " << author;
-	cout << "\nÑòğàíèöû: " << pages << "\n";
+	cout << "\nĞ˜Ğ¼Ñ: " << name;
+	cout << "\nĞĞ²Ñ‚Ğ¾Ñ€: " << author;
+	cout << "\nĞ¡Ñ‚Ñ€Ğ°Ğ½Ğ¸Ñ†Ñ‹: " << pages << "\n";
 }
 
 void Magazin::Input() {
 	getline(cin, name);
-	cout << "Èìÿ? "; 
+	cout << "Ğ˜Ğ¼Ñ? "; 
 	getline(cin, name);
-	cout << "Àâòîğ? "; 
+	cout << "ĞĞ²Ñ‚Ğ¾Ñ€? "; 
 	getline(cin, author);
-	cout << "Êîëè÷åñòâî ñòğàíèö? "; 
+	cout << "ĞšĞ¾Ğ»Ğ¸Ñ‡ĞµÑÑ‚Ğ²Ğ¾ ÑÑ‚Ñ€Ğ°Ğ½Ğ¸Ñ†? "; 
 	cin >> pages;
 }
 
