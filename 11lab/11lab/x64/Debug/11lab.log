@@ -1,0 +1,5 @@
+﻿  main3.cpp
+  main4.cpp
+C:\Users\Admin\Desktop\vsc\да уж\11lab\11lab\main4.cpp(47,18): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+  Создание кода...
+  11lab.vcxproj -> C:\Users\Admin\Desktop\vsc\да уж\11lab\x64\Debug\11lab.exe
