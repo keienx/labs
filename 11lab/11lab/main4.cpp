@@ -1,4 +1,4 @@
-#include <C:\Users\Admin\Desktop\vsc\да уж\11lab\11lab\pair.h>
+//#include <C:\Users\Admin\Desktop\vsc\да уж\11lab\11lab\pair.h>
 //#include <iostream>
 //#include <queue>
 //#include <list>
