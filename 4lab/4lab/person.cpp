@@ -7,13 +7,13 @@ Person& Person::operator =(const Person& t) {
 }
 
 ostream& operator<<(ostream& out, const Person& t) {
-	return (out << "Èìÿ: " << t.name << "\nÂîçðàñò: " << t.age << "\n\n");
+	return (out << "Ð˜Ð¼Ñ: " << t.name << "\nÐ’Ð¾Ð·Ñ€Ð°ÑÑ‚: " << t.age << "\n\n");
 }
 
 istream& operator>>(istream& in, Person& t) {
-	cout << "Èìÿ?: ";
+	cout << "Ð˜Ð¼Ñ?: ";
 	in >> t.name;
-	cout << "Âîçðàñò?: ";
+	cout << "Ð’Ð¾Ð·Ñ€Ð°ÑÑ‚?: ";
 	in >> t.age;
 	cout << "\n";
 	return in;
