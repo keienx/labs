@@ -1,157 +1,156 @@
-#include <iostream>
-#include <list>
-#include <map>
-#include <vector>
-#include <algorithm>
-#include <functional>
-#include "Pair.h"
-using namespace std;
-
-ostream& operator<<(ostream& out, map<double, Pair>& m) {
-	for (map <double, Pair>::iterator it = m.begin(); it != m.end(); it++) {
-		cout << "Ñóììà - " << it->first << ", Çíà÷åíèå - " << it->second;
-	}
-	return out;
-}
-
-void print_vect(Pair elem) {
-	cout << "Ñóììà - " << elem.sum() << ", Çíà÷åíèå - " << elem << "\n";
-}
-
-void menu(const int c, map<double, Pair>& m) {
-	switch (c) {
-	case 1: {
-		cout << m << "\n";
-		cout << "Ââåäèòå B äëÿ ñîðòèðîâêè ïî âîçðàñòàíèþ \nÂâåäèòå U äëÿ ñîðòèðîâêè ïî óáûâàíèþ\n";
-		char op;
-		cin >> op;
-		if (op == 'B') {
-			cout << m << "\n";
-		}
-		else if (op == 'U') {
-			vector<Pair> v;
-			Pair elem;
-			for (map <double, Pair>::iterator it = m.begin(); it != m.end(); ++it) {
-				elem = it->second;
-				v.push_back(elem);
-			}
-			sort(v.begin(), v.end(), mem_fun_ref(&Pair::operator>));
-			for_each(v.begin(), v.end(), ptr_fun(print_vect));
-			v.~vector();
-		}
-		else {
-			cout << "Îøèáêà ââîäà!\n";
-		}
-
-		break;
-	}
-	case 2: {
-		cout << m << "\n\n";
-		cout << "Çíà÷åíèå?\n";
-		Pair value;
-		cin >> value;
-		const auto it = find_if(m.begin(), m.end(), [&value](decltype(*m.begin())& it)->bool {
-			return it.second == value;
-			});
-
-		if (it == m.end()) {
-			cout << "Íåò òàêîãî ýëåìåíòà" << "\n";
-			break;
-		}
-		for (map<double, Pair>::iterator i = m.begin(); i != m.end(); ++i) {
-			if (i == it) {
-				cout << "Ýëåìåíò -  " << i->second << "\n";
-			}
-		}
-		break;
-	}
-	case 3: {
-		cout << m << "\n" << "\n";
-		Pair sum;
-		for (auto it = m.begin(); it != m.end(); it++) sum += it->second;
-		sum.set_first(sum.get_first() / m.size());
-		sum.set_second(round((double)(sum.get_second() / m.size()) * 100) / 100);
-		cout << "Ñðåäíåå àðèôìåòè÷åñêîå - " << sum.sum() << " Ïî ýëåìåíòàì - " << sum << "\n\n";
-		m.insert(make_pair(sum.sum(), sum));
-		cout << m << "\n";
-		break;
-	}
-	case 4: {
-		cout << m << "\n" << "\n";
-		int one, two;
-		cout << "\nÏåðâàÿ ãðàíèöà?\n"; cin >> one;
-		cout << "\nÂòîðàÿ ãðàíèöà?\n"; cin >> two;
-		if (one > two) swap(one, two);
-		while (find_if(m.begin(), m.end(), [&one, &two](decltype(*m.begin())& it) -> bool {
-			return it.second.sum() > one && it.second.sum() < two; 
-			}) != m.end()) {
-			const auto it = find_if(m.begin(), m.end(), [&one, &two](decltype(*m.begin())& it) -> bool {
-				return it.second.sum() > one && it.second.sum() < two;
-				});
-			m.erase(it->first);
-		}
-
-		cout << "\n" << m << "\n";
-		break;
-	}
-	case 5: {
-		cout << m << "\n" << "\n";
-		const auto mini = m.begin();
-		const auto maxi = --m.end();
-		cout << "Ìèíèìàëüíîå: " << mini->second << "\n";
-		cout << "Ìàêñèìàëüíîå: " << maxi->second << "\n";
-
-		Pair sum;
-		sum = mini->second + maxi->second;
-		cout << "Ñóììà = " << sum << "\n";
-		for (auto it = m.begin(); it != m.end(); it++) {
-			it->second.set_second(it->second.get_second() + sum.get_second());
-			it->second.set_first(it->second.get_first() + sum.get_first());
-		}
-		cout << "\n" << m << "\n";
-		break;
-	}
-	case 6: {
-		cout << m << "\n";
-		break;
-	}
-	default: {
-		cout << "\nÂûõîä â ìåíþ" << "\n";
-		exit(0);
-	}
-	}
-}
-
-
-int main() {
-	srand(time(NULL));
-	system("color F0");
-	system("chcp 1251 >> null");
-	int size;
-	cout << "Ðàçìåð? ";
-	cin >> size;
-	map<double, Pair> m;
-	for (int i = 0; i < size; ++i) {
-		Pair p;
-		p.set_random();
-		m.insert(make_pair(p.sum(), p));
-	}
-	cout << m << "\n";
-
-	while (true) {
-		system("pause");
-		system("cls");
-		cout << "1. Îòñîðòèðîâàòü\n";
-		cout << "2. Íàéòè ïàðó\n";
-		cout << "3. Äîáàâèòü ñðåäíåå àðèôìåòè÷åñêîå\n";
-		cout << "4. Óäàëèòü ýëåìåíòû èç äèàïàçîíà\n";
-		cout << "5. Äîáàâèòü ìèíèìàëüíîå è ìàêñèìàëüíîå çíà÷åíèå\n";
-		cout << "6. Âûâîä íà ýêðàí\n";
-		cout << "0. Çàâåðøåíèå ðàáîòû ïðîãðàììû\n";
-		int c;
-		cin >> c;
-		system("cls");
-		menu(c, m);
-	}
-	return 0;
-}
+//#include <iostream>
+//#include <list>
+//#include <map>
+//#include <vector>
+//#include <algorithm>
+//#include <functional>
+//#include "Pair.h"
+//using namespace std;
+//
+//ostream& operator<<(ostream& out, map<double, Pair>& m) {
+//	for (map <double, Pair>::iterator it = m.begin(); it != m.end(); it++) {
+//		cout << "Ð¡ÑƒÐ¼Ð¼Ð° - " << it->first << ", Ð—Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ - " << it->second;
+//	}
+//	return out;
+//}
+//
+//void print_vect(Pair elem) {
+//	cout << "Ð¡ÑƒÐ¼Ð¼Ð° - " << elem.sum() << ", Ð—Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ - " << elem << "\n";
+//}
+//
+//void menu(const int c, map<double, Pair>& m) {
+//	switch (c) {
+//	case 1: {
+//		cout << m << "\n";
+//		cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ B Ð´Ð»Ñ ÑÐ¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²ÐºÐ¸ Ð¿Ð¾ Ð²Ð¾Ð·Ñ€Ð°ÑÑ‚Ð°Ð½Ð¸ÑŽ \nÐ’Ð²ÐµÐ´Ð¸Ñ‚Ðµ U Ð´Ð»Ñ ÑÐ¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²ÐºÐ¸ Ð¿Ð¾ ÑƒÐ±Ñ‹Ð²Ð°Ð½Ð¸ÑŽ\n";
+//		char op;
+//		cin >> op;
+//		if (op == 'B') {
+//			cout << m << "\n";
+//		}
+//		else if (op == 'U') {
+//			vector<Pair> v;
+//			Pair elem;
+//			for (map <double, Pair>::iterator it = m.begin(); it != m.end(); ++it) {
+//				elem = it->second;
+//				v.push_back(elem);
+//			}
+//			sort(v.begin(), v.end(), mem_fun_ref(&Pair::operator>));
+//			for_each(v.begin(), v.end(), ptr_fun(print_vect));
+//			v.~vector();
+//		}
+//		else {
+//			cout << "ÐžÑˆÐ¸Ð±ÐºÐ° Ð²Ð²Ð¾Ð´Ð°!\n";
+//		}
+//
+//		break;
+//	}
+//	case 2: {
+//		cout << m << "\n\n";
+//		cout << "Ð—Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ?\n";
+//		Pair value;
+//		cin >> value;
+//		const auto it = find_if(m.begin(), m.end(), [&value](decltype(*m.begin())& it)->bool {
+//			return it.second == value;
+//			});
+//
+//		if (it == m.end()) {
+//			cout << "ÐÐµÑ‚ Ñ‚Ð°ÐºÐ¾Ð³Ð¾ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð°" << "\n";
+//			break;
+//		}
+//		for (map<double, Pair>::iterator i = m.begin(); i != m.end(); ++i) {
+//			if (i == it) {
+//				cout << "Ð­Ð»ÐµÐ¼ÐµÐ½Ñ‚ -  " << i->second << "\n";
+//			}
+//		}
+//		break;
+//	}
+//	case 3: {
+//		cout << m << "\n" << "\n";
+//		Pair sum;
+//		for (auto it = m.begin(); it != m.end(); it++) sum += it->second;
+//		sum.set_first(sum.get_first() / m.size());
+//		sum.set_second(round((double)(sum.get_second() / m.size()) * 100) / 100);
+//		cout << "Ð¡Ñ€ÐµÐ´Ð½ÐµÐµ Ð°Ñ€Ð¸Ñ„Ð¼ÐµÑ‚Ð¸Ñ‡ÐµÑÐºÐ¾Ðµ - " << sum.sum() << " ÐŸÐ¾ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð°Ð¼ - " << sum << "\n\n";
+//		m.insert(make_pair(sum.sum(), sum));
+//		cout << m << "\n";
+//		break;
+//	}
+//	case 4: {
+//		cout << m << "\n" << "\n";
+//		int one, two;
+//		cout << "\nÐŸÐµÑ€Ð²Ð°Ñ Ð³Ñ€Ð°Ð½Ð¸Ñ†Ð°?\n"; cin >> one;
+//		cout << "\nÐ’Ñ‚Ð¾Ñ€Ð°Ñ Ð³Ñ€Ð°Ð½Ð¸Ñ†Ð°?\n"; cin >> two;
+//		if (one > two) swap(one, two);
+//		while (find_if(m.begin(), m.end(), [&one, &two](decltype(*m.begin())& it) -> bool {
+//			return it.second.sum() > one && it.second.sum() < two; 
+//			}) != m.end()) {
+//			const auto it = find_if(m.begin(), m.end(), [&one, &two](decltype(*m.begin())& it) -> bool {
+//				return it.second.sum() > one && it.second.sum() < two;
+//				});
+//			m.erase(it->first);
+//		}
+//
+//		cout << "\n" << m << "\n";
+//		break;
+//	}
+//	case 5: {
+//		cout << m << "\n" << "\n";
+//		const auto mini = m.begin();
+//		const auto maxi = --m.end();
+//		cout << "ÐœÐ¸Ð½Ð¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ðµ: " << mini->second << "\n";
+//		cout << "ÐœÐ°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ðµ: " << maxi->second << "\n";
+//
+//		Pair sum;
+//		sum = mini->second + maxi->second;
+//		cout << "Ð¡ÑƒÐ¼Ð¼Ð° = " << sum << "\n";
+//		for (auto it = m.begin(); it != m.end(); it++) {
+//			it->second.set_second(it->second.get_second() + sum.get_second());
+//			it->second.set_first(it->second.get_first() + sum.get_first());
+//		}
+//		cout << "\n" << m << "\n";
+//		break;
+//	}
+//	case 6: {
+//		cout << m << "\n";
+//		break;
+//	}
+//	default: {
+//		cout << "\nÐ’Ñ‹Ñ…Ð¾Ð´ Ð² Ð¼ÐµÐ½ÑŽ" << "\n";
+//		exit(0);
+//	}
+//	}
+//}
+//
+//int main() {
+//	srand(time(NULL));
+//	system("color F0");
+//	system("chcp 1251 >> null");
+//	int size;
+//	cout << "Ð Ð°Ð·Ð¼ÐµÑ€? ";
+//	cin >> size;
+//	map<double, Pair> m;
+//	for (int i = 0; i < size; ++i) {
+//		Pair p;
+//		p.set_random();
+//		m.insert(make_pair(p.sum(), p));
+//	}
+//	cout << m << "\n";
+//
+//	while (true) {
+//		system("pause");
+//		system("cls");
+//		cout << "1. ÐžÑ‚ÑÐ¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ\n";
+//		cout << "2. ÐÐ°Ð¹Ñ‚Ð¸ Ð¿Ð°Ñ€Ñƒ\n";
+//		cout << "3. Ð”Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ ÑÑ€ÐµÐ´Ð½ÐµÐµ Ð°Ñ€Ð¸Ñ„Ð¼ÐµÑ‚Ð¸Ñ‡ÐµÑÐºÐ¾Ðµ\n";
+//		cout << "4. Ð£Ð´Ð°Ð»Ð¸Ñ‚ÑŒ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ñ‹ Ð¸Ð· Ð´Ð¸Ð°Ð¿Ð°Ð·Ð¾Ð½Ð°\n";
+//		cout << "5. Ð”Ð¾Ð±Ð°Ð²Ð¸Ñ‚ÑŒ Ð¼Ð¸Ð½Ð¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ðµ Ð¸ Ð¼Ð°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ\n";
+//		cout << "6. Ð’Ñ‹Ð²Ð¾Ð´ Ð½Ð° ÑÐºÑ€Ð°Ð½\n";
+//		cout << "0. Ð—Ð°Ð²ÐµÑ€ÑˆÐµÐ½Ð¸Ðµ Ñ€Ð°Ð±Ð¾Ñ‚Ñ‹ Ð¿Ñ€Ð¾Ð³Ñ€Ð°Ð¼Ð¼Ñ‹\n";
+//		int c;
+//		cin >> c;
+//		system("cls");
+//		menu(c, m);
+//	}
+//	return 0;
+//}
