@@ -1,4 +1,4 @@
-#include <C:\Users\Admin\Desktop\vsc\да уж\12lab\12lab\pair.h>
+//#include <C:\Users\Admin\Desktop\vsc\да уж\12lab\12lab\pair.h>
 //#include <iostream>
 //#include <set>
 //#include "List.h"
