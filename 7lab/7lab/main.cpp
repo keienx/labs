@@ -14,7 +14,7 @@ int main(){
 	cout << "List<Pair>(A): ";
 	A.show_list();
 	cout << "A[0]: " << A[0] << "\n";
-	cout << "Ðàçìåð A(): " << A() << "\n" << "\n";
+	cout << "Ð Ð°Ð·Ð¼ÐµÑ€ A(): " << A() << "\n" << "\n";
 
 	B.push_back(p2);
 	p2 = p2 + 6;
@@ -24,7 +24,7 @@ int main(){
 	cout << "List<Pair>(B): "; 
 	B.show_list();
 	cout << "B[1]: " << B[1] << "\n";
-	cout << "Ðàçìåð B(): " << B() << "\n" << "\n";
+	cout << "Ð Ð°Ð·Ð¼ÐµÑ€ B(): " << B() << "\n" << "\n";
 
 	A = A * B;
 	cout << "(A = A * B) == ";
