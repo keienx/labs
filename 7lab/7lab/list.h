@@ -131,7 +131,7 @@ void List<T>::pop_front(){
 	}
 	else{
 		system("cls");
-		cout << "Список пуст!\n\n";
+		cout << "РЎРїРёСЃРѕРє РїСѓСЃС‚!\n\n";
 	}
 }
 template <typename T>
@@ -165,7 +165,7 @@ void List<T>::pop_back(){
 	}
 	else{ 
 		system("cls");
-		cout << "Список пуст!\n\n";
+		cout << "РЎРїРёСЃРѕРє РїСѓСЃС‚!\n\n";
 	}
 }
 template <typename T>
@@ -184,7 +184,7 @@ void List<T>::show_list(){
 			break;
 		}
 		case 2:{
-			cout << "Список: ";
+			cout << "РЎРїРёСЃРѕРє: ";
 			Node* current = tail;
 			for (size_t i = size; i > 0; i--){
 				cout << current->data << " ";
@@ -195,13 +195,13 @@ void List<T>::show_list(){
 		}
 		default:
 			system("cls");
-			cout << "Ошибка ввода!\n";
+			cout << "РћС€РёР±РєР° РІРІРѕРґР°!\n";
 			break;
 		}
 	}
 	else {
 		system("cls");
-		cout << "Список пуст!\n";
+		cout << "РЎРїРёСЃРѕРє РїСѓСЃС‚!\n";
 	}
 }
 template <typename T>
@@ -245,12 +245,12 @@ void List<T>::add_after(int number, T data){
 		}
 		else{
 			system("cls"); 
-			cout << "Ошибка ввода!\n\n";
+			cout << "РћС€РёР±РєР° РІРІРѕРґР°!\n\n";
 		}
 	}
 	else{ 
 		system("cls"); 
-		cout << "Список пуст!\n\n";
+		cout << "РЎРїРёСЃРѕРє РїСѓСЃС‚!\n\n";
 	}
 }
 template <typename T>
@@ -292,12 +292,12 @@ void List<T>::pop_element(int number)
 		}
 		else{ 
 			system("cls"); 
-			cout << "Ошибка ввода!\n\n"; 
+			cout << "РћС€РёР±РєР° РІРІРѕРґР°!\n\n"; 
 		}
 	}
 	else{ 
 		system("cls");
-		cout << "Список пуст!\n\n"; 
+		cout << "РЎРїРёСЃРѕРє РїСѓСЃС‚!\n\n"; 
 	}
 }
 
@@ -320,7 +320,7 @@ T& List<T>::operator[](const int index) const{
 		}
 	}
 	else {
-		throw out_of_range("За границами!");
+		throw out_of_range("Р—Р° РіСЂР°РЅРёС†Р°РјРё!");
 	}
 }
 template <typename T>
