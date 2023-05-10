@@ -6,7 +6,7 @@ void f1(Person& c) {
 }
 
 Person f2() {
-	Student s("Àëåêñàíäğ", 10, "àëãåáğà", 4);
+	Student s("ĞĞ»ĞµĞºÑĞ°Ğ½Ğ´Ñ€", 10, "Ğ°Ğ»Ğ³ĞµĞ±Ñ€Ğ°", 4);
 	return s;
 }
 
@@ -17,7 +17,7 @@ int main() {
 	cin >> a;
 	cout << a;
 
-	Person b("Ãàğèê", 5);
+	Person b("Ğ“Ğ°Ñ€Ğ¸Ğº", 5);
 	a = b;
 	cout << a;
 
