@@ -1,4 +1,4 @@
-﻿#include "Pair.h"
+#include "Pair.h"
 #include "file_work.h" 
 #include <iostream> 
 #include <fstream>
@@ -45,8 +45,8 @@ int main() {
 			k = del_file(file_name, temp);
 			if (k < 0) {
 				cout << "Невозможно считать файл\n";
-				break;
 			}
+			break;
 		case 4:
 			cout << "Имя файлa: "; cin >> file_name;
 			cout << "После какого номера: "; cin >> num;
@@ -57,8 +57,8 @@ int main() {
 			}
 			if (k == 0) {
 				k = add_end(file_name, count);
-				break;
 			}
+			break;
 		case 5:
 			cout << "Имя файлa: "; 
 			cin >> file_name;
