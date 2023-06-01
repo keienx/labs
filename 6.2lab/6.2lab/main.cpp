@@ -1,16 +1,19 @@
 #include "Stack.h"
 
 #include <iostream>
+#include <Windows.h>
 
 using namespace std;
 
 int main(){
+	SetConsoleCP(1251); 
+	SetConsoleOutputCP(1251);
 	system("color F0");
 	srand(time(NULL));
 	Stack a(7);
 	cout << a;
 	int num;
-	cout << "Ââåäèòå äîáàâëÿåìûé ýëåìåíò: ";
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð´Ð¾Ð±Ð°Ð²Ð»ÑÐµÐ¼Ñ‹Ð¹ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚: ";
 	cin >> num;
 	a.popback();
 	a.pushback(num);
