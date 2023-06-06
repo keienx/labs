@@ -1,0 +1,140 @@
+﻿  main.cpp
+C:\SFML-2.5.1\include\SFML\Config.hpp(197,2): error C2065: queue: необъявленный идентификатор
+C:\SFML-2.5.1\include\SFML\Config.hpp(197,13): error C2760: синтаксическая ошибка: непредвиденный элемент ">". Ожидается "выражение"
+C:\SFML-2.5.1\include\SFML\Config.hpp(197,13): error C3878: синтаксическая ошибка: непредвиденный маркер ">" после "expression"
+C:\SFML-2.5.1\include\SFML\Config.hpp(197,13): message : пропущено восстановление ошибки: "> идентификатор"
+C:\SFML-2.5.1\include\SFML\Config.hpp(198,2): error C2065: que: необъявленный идентификатор
+C:\SFML-2.5.1\include\SFML\Config.hpp(199,10): error C2065: que: необъявленный идентификатор
+C:\SFML-2.5.1\include\SFML\Config.hpp(201,10): error C2065: que: необъявленный идентификатор
+C:\SFML-2.5.1\include\SFML\Config.hpp(202,3): error C2065: cout: необъявленный идентификатор
+C:\SFML-2.5.1\include\SFML\Config.hpp(202,40): error C2065: endl: необъявленный идентификатор
+C:\SFML-2.5.1\include\SFML\Config.hpp(203,3): error C2065: que: необъявленный идентификатор
+C:\SFML-2.5.1\include\SFML\Config.hpp(205,4): error C2065: que: необъявленный идентификатор
+C:\SFML-2.5.1\include\SFML\Config.hpp(207,4): error C2065: que: необъявленный идентификатор
+C:\SFML-2.5.1\include\SFML\Config.hpp(217,2): error C2065: stack: необъявленный идентификатор
+C:\SFML-2.5.1\include\SFML\Config.hpp(217,13): error C2760: синтаксическая ошибка: непредвиденный элемент ">". Ожидается "выражение"
+C:\SFML-2.5.1\include\SFML\Config.hpp(217,13): error C3878: синтаксическая ошибка: непредвиденный маркер ">" после "expression"
+C:\SFML-2.5.1\include\SFML\Config.hpp(217,13): message : пропущено восстановление ошибки: "> идентификатор"
+C:\SFML-2.5.1\include\SFML\Config.hpp(218,2): error C2065: st: необъявленный идентификатор
+C:\SFML-2.5.1\include\SFML\Config.hpp(219,10): error C2065: st: необъявленный идентификатор
+C:\SFML-2.5.1\include\SFML\Config.hpp(221,10): error C2065: st: необъявленный идентификатор
+C:\SFML-2.5.1\include\SFML\Config.hpp(222,3): error C2065: cout: необъявленный идентификатор
+C:\SFML-2.5.1\include\SFML\Config.hpp(222,40): error C2065: endl: необъявленный идентификатор
+C:\SFML-2.5.1\include\SFML\Config.hpp(223,3): error C2065: st: необъявленный идентификатор
+C:\SFML-2.5.1\include\SFML\Config.hpp(225,4): error C2065: st: необъявленный идентификатор
+C:\SFML-2.5.1\include\SFML\Config.hpp(227,4): error C2065: st: необъявленный идентификатор
+C:\SFML-2.5.1\include\SFML\Config.hpp(236,2): error C3861: cout: идентификатор не найден
+C:\SFML-2.5.1\include\SFML\Config.hpp(236,47): error C3861: endl: идентификатор не найден
+C:\SFML-2.5.1\include\SFML\Config.hpp(236,2): error C2065: cout: необъявленный идентификатор
+C:\SFML-2.5.1\include\SFML\Config.hpp(236,47): error C2065: endl: необъявленный идентификатор
+C:\SFML-2.5.1\include\SFML\Config.hpp(255,2): error C3861: cout: идентификатор не найден
+C:\SFML-2.5.1\include\SFML\Config.hpp(255,47): error C3861: endl: идентификатор не найден
+C:\SFML-2.5.1\include\SFML\Config.hpp(255,2): error C2065: cout: необъявленный идентификатор
+C:\SFML-2.5.1\include\SFML\Config.hpp(255,47): error C2065: endl: необъявленный идентификатор
+C:\SFML-2.5.1\include\SFML\Config.hpp(297,2): error C2065: stack: необъявленный идентификатор
+C:\SFML-2.5.1\include\SFML\Config.hpp(297,13): error C2760: синтаксическая ошибка: непредвиденный элемент ">". Ожидается "выражение"
+C:\SFML-2.5.1\include\SFML\Config.hpp(297,13): error C3878: синтаксическая ошибка: непредвиденный маркер ">" после "expression"
+C:\SFML-2.5.1\include\SFML\Config.hpp(297,13): message : пропущено восстановление ошибки: "> идентификатор"
+C:\SFML-2.5.1\include\SFML\Config.hpp(298,2): error C2065: st: необъявленный идентификатор
+C:\SFML-2.5.1\include\SFML\Config.hpp(299,10): error C2065: st: необъявленный идентификатор
+C:\SFML-2.5.1\include\SFML\Config.hpp(301,10): error C2065: st: необъявленный идентификатор
+C:\SFML-2.5.1\include\SFML\Config.hpp(303,3): error C2065: st: необъявленный идентификатор
+C:\SFML-2.5.1\include\SFML\Config.hpp(305,4): error C2065: st: необъявленный идентификатор
+C:\SFML-2.5.1\include\SFML\Config.hpp(307,4): error C2065: st: необъявленный идентификатор
+C:\SFML-2.5.1\include\SFML\System\Time.hpp(40,23): error C2079: "Time" использует не имеющую определения структуру class "sf::SFML_API_IMPORT"
+C:\SFML-2.5.1\include\SFML\System\Time.hpp(42,1): error C2059: синтаксическая ошибка: public
+C:\SFML-2.5.1\include\SFML\System\Time.hpp(60,28): error C2270: asSeconds: модификаторы недопустимы для функций, не являющихся членами
+C:\SFML-2.5.1\include\SFML\System\Time.hpp(70,25): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\SFML-2.5.1\include\SFML\System\Time.hpp(70,11): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "asMilliseconds"
+C:\SFML-2.5.1\include\SFML\System\Time.hpp(80,25): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\SFML-2.5.1\include\SFML\System\Time.hpp(80,11): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "asMicroseconds"
+C:\SFML-2.5.1\include\SFML\System\Time.hpp(85,23): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\SFML-2.5.1\include\SFML\System\Time.hpp(85,18): error C2373: sf::Time: переопределение; различные модификаторы типа
+C:\SFML-2.5.1\include\SFML\System\Time.hpp(40,23): message : см. объявление "sf::Time"
+C:\SFML-2.5.1\include\SFML\System\Time.hpp(85,23): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "Zero"
+C:\SFML-2.5.1\include\SFML\System\Time.hpp(85,27): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\SFML-2.5.1\include\SFML\System\Time.hpp(87,1): error C2059: синтаксическая ошибка: private
+C:\SFML-2.5.1\include\SFML\System\Time.hpp(89,5): error C2255: friend: не допускается вне определения класса
+C:\SFML-2.5.1\include\SFML\System\Time.hpp(89,28): error C2079: "Time" использует не имеющую определения структуру class "sf::SFML_API_IMPORT"
+C:\SFML-2.5.1\include\SFML\System\Time.hpp(89,28): error C2086: int sf::Time: переопределение
+C:\SFML-2.5.1\include\SFML\System\Time.hpp(40,23): message : см. объявление "sf::Time"
+C:\SFML-2.5.1\include\SFML\System\Time.hpp(89,33): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "seconds"
+C:\SFML-2.5.1\include\SFML\System\Time.hpp(89,47): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\SFML-2.5.1\include\SFML\System\Time.hpp(90,5): error C2255: friend: не допускается вне определения класса
+C:\SFML-2.5.1\include\SFML\System\Time.hpp(90,28): error C2079: "Time" использует не имеющую определения структуру class "sf::SFML_API_IMPORT"
+C:\SFML-2.5.1\include\SFML\System\Time.hpp(90,28): error C2086: int sf::Time: переопределение
+C:\SFML-2.5.1\include\SFML\System\Time.hpp(40,23): message : см. объявление "sf::Time"
+C:\SFML-2.5.1\include\SFML\System\Time.hpp(90,33): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "milliseconds"
+C:\SFML-2.5.1\include\SFML\System\Time.hpp(90,51): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\SFML-2.5.1\include\SFML\System\Time.hpp(91,5): error C2255: friend: не допускается вне определения класса
+C:\SFML-2.5.1\include\SFML\System\Time.hpp(91,28): error C2079: "Time" использует не имеющую определения структуру class "sf::SFML_API_IMPORT"
+C:\SFML-2.5.1\include\SFML\System\Time.hpp(91,28): error C2086: int sf::Time: переопределение
+C:\SFML-2.5.1\include\SFML\System\Time.hpp(40,23): message : см. объявление "sf::Time"
+C:\SFML-2.5.1\include\SFML\System\Time.hpp(91,33): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "microseconds"
+C:\SFML-2.5.1\include\SFML\System\Time.hpp(91,51): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\SFML-2.5.1\include\SFML\System\Time.hpp(102,25): error C2178: "Time" нельзя объявить с описателем "explicit"
+C:\SFML-2.5.1\include\SFML\System\Time.hpp(102,25): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\SFML-2.5.1\include\SFML\System\Time.hpp(102,14): error C2374: sf::Time: переопределение; множественная инициализация
+C:\SFML-2.5.1\include\SFML\System\Time.hpp(40,23): message : см. объявление "sf::Time"
+C:\SFML-2.5.1\include\SFML\System\Time.hpp(102,25): error C2146: синтаксическая ошибка: отсутствие ")" перед идентификатором "microseconds"
+C:\SFML-2.5.1\include\SFML\System\Time.hpp(104,1): error C2059: синтаксическая ошибка: private
+C:\SFML-2.5.1\include\SFML\System\Time.hpp(109,25): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\SFML-2.5.1\include\SFML\System\Time.hpp(109,5): error C2086: int sf::Int64: переопределение
+C:\SFML-2.5.1\include\SFML\System\Time.hpp(80,5): message : см. объявление "sf::Int64"
+C:\SFML-2.5.1\include\SFML\System\Time.hpp(109,11): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "m_microseconds"
+C:\SFML-2.5.1\include\SFML\System\Time.hpp(123,22): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\SFML-2.5.1\include\SFML\System\Time.hpp(123,17): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "Time"
+C:\SFML-2.5.1\include\SFML\System\Time.hpp(136,22): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\SFML-2.5.1\include\SFML\System\Time.hpp(136,1): error C2086: int SFML_API_IMPORT: переопределение
+C:\SFML-2.5.1\include\SFML\System\Time.hpp(123,1): message : см. объявление "SFML_API_IMPORT"
+C:\SFML-2.5.1\include\SFML\System\Time.hpp(136,17): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "Time"
+C:\SFML-2.5.1\include\SFML\System\Time.hpp(149,22): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\SFML-2.5.1\include\SFML\System\Time.hpp(149,1): error C2086: int SFML_API_IMPORT: переопределение
+C:\SFML-2.5.1\include\SFML\System\Time.hpp(123,1): message : см. объявление "SFML_API_IMPORT"
+C:\SFML-2.5.1\include\SFML\System\Time.hpp(149,17): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "Time"
+C:\SFML-2.5.1\include\SFML\System\Time.hpp(161,17): error C2144: синтаксическая ошибка: перед "bool" требуется ";"
+C:\SFML-2.5.1\include\SFML\System\Time.hpp(161,22): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\SFML-2.5.1\include\SFML\System\Time.hpp(161,1): error C2086: int SFML_API_IMPORT: переопределение
+C:\SFML-2.5.1\include\SFML\System\Time.hpp(123,1): message : см. объявление "SFML_API_IMPORT"
+C:\SFML-2.5.1\include\SFML\System\Time.hpp(161,39): error C2473: operator ==: выглядит как определение функции, но без списка параметров.
+C:\SFML-2.5.1\include\SFML\System\Time.hpp(161,34): error C2065: Time: необъявленный идентификатор
+C:\SFML-2.5.1\include\SFML\System\Time.hpp(161,39): error C2146: синтаксическая ошибка: отсутствие ")" перед идентификатором "left"
+C:\SFML-2.5.1\include\SFML\System\Time.hpp(173,17): error C2144: синтаксическая ошибка: перед "bool" требуется ";"
+C:\SFML-2.5.1\include\SFML\System\Time.hpp(173,22): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\SFML-2.5.1\include\SFML\System\Time.hpp(173,1): error C2086: int SFML_API_IMPORT: переопределение
+C:\SFML-2.5.1\include\SFML\System\Time.hpp(123,1): message : см. объявление "SFML_API_IMPORT"
+C:\SFML-2.5.1\include\SFML\System\Time.hpp(173,39): error C2473: operator !=: выглядит как определение функции, но без списка параметров.
+C:\SFML-2.5.1\include\SFML\System\Time.hpp(173,34): error C2065: Time: необъявленный идентификатор
+C:\SFML-2.5.1\include\SFML\System\Time.hpp(173,39): error C2146: синтаксическая ошибка: отсутствие ")" перед идентификатором "left"
+C:\SFML-2.5.1\include\SFML\System\Time.hpp(185,17): error C2144: синтаксическая ошибка: перед "bool" требуется ";"
+C:\SFML-2.5.1\include\SFML\System\Time.hpp(185,22): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\SFML-2.5.1\include\SFML\System\Time.hpp(185,1): error C2086: int SFML_API_IMPORT: переопределение
+C:\SFML-2.5.1\include\SFML\System\Time.hpp(123,1): message : см. объявление "SFML_API_IMPORT"
+C:\SFML-2.5.1\include\SFML\System\Time.hpp(185,38): error C2473: operator <: выглядит как определение функции, но без списка параметров.
+C:\SFML-2.5.1\include\SFML\System\Time.hpp(185,33): error C2065: Time: необъявленный идентификатор
+C:\SFML-2.5.1\include\SFML\System\Time.hpp(185,38): error C2146: синтаксическая ошибка: отсутствие ")" перед идентификатором "left"
+C:\SFML-2.5.1\include\SFML\System\Time.hpp(197,17): error C2144: синтаксическая ошибка: перед "bool" требуется ";"
+C:\SFML-2.5.1\include\SFML\System\Time.hpp(197,22): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\SFML-2.5.1\include\SFML\System\Time.hpp(197,1): error C2086: int SFML_API_IMPORT: переопределение
+C:\SFML-2.5.1\include\SFML\System\Time.hpp(123,1): message : см. объявление "SFML_API_IMPORT"
+C:\SFML-2.5.1\include\SFML\System\Time.hpp(197,38): error C2473: operator >: выглядит как определение функции, но без списка параметров.
+C:\SFML-2.5.1\include\SFML\System\Time.hpp(197,33): error C2065: Time: необъявленный идентификатор
+C:\SFML-2.5.1\include\SFML\System\Time.hpp(197,38): error C2146: синтаксическая ошибка: отсутствие ")" перед идентификатором "left"
+C:\SFML-2.5.1\include\SFML\System\Time.hpp(209,17): error C2144: синтаксическая ошибка: перед "bool" требуется ";"
+C:\SFML-2.5.1\include\SFML\System\Time.hpp(209,22): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\SFML-2.5.1\include\SFML\System\Time.hpp(209,1): error C2086: int SFML_API_IMPORT: переопределение
+C:\SFML-2.5.1\include\SFML\System\Time.hpp(123,1): message : см. объявление "SFML_API_IMPORT"
+C:\SFML-2.5.1\include\SFML\System\Time.hpp(209,39): error C2473: operator <=: выглядит как определение функции, но без списка параметров.
+C:\SFML-2.5.1\include\SFML\System\Time.hpp(209,34): error C2065: Time: необъявленный идентификатор
+C:\SFML-2.5.1\include\SFML\System\Time.hpp(209,39): error C2146: синтаксическая ошибка: отсутствие ")" перед идентификатором "left"
+C:\SFML-2.5.1\include\SFML\System\Time.hpp(221,17): error C2144: синтаксическая ошибка: перед "bool" требуется ";"
+C:\SFML-2.5.1\include\SFML\System\Time.hpp(221,22): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\SFML-2.5.1\include\SFML\System\Time.hpp(221,1): error C2086: int SFML_API_IMPORT: переопределение
+C:\SFML-2.5.1\include\SFML\System\Time.hpp(123,1): message : см. объявление "SFML_API_IMPORT"
+C:\SFML-2.5.1\include\SFML\System\Time.hpp(221,39): error C2473: operator >=: выглядит как определение функции, но без списка параметров.
+C:\SFML-2.5.1\include\SFML\System\Time.hpp(221,34): error C2065: Time: необъявленный идентификатор
+C:\SFML-2.5.1\include\SFML\System\Time.hpp(221,39): error C2146: синтаксическая ошибка: отсутствие ")" перед идентификатором "left"
+C:\SFML-2.5.1\include\SFML\System\Time.hpp(232,22): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\SFML-2.5.1\include\SFML\System\Time.hpp(232,1): error C2086: int SFML_API_IMPORT: переопределение
+C:\SFML-2.5.1\include\SFML\System\Time.hpp(123,1): message : см. объявление "SFML_API_IMPORT"
+C:\SFML-2.5.1\include\SFML\System\Time.hpp(232,22): fatal  error C1003: число ошибок превышает 100; остановка компиляции
